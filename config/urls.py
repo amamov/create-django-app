@@ -8,7 +8,7 @@ urlpatterns = [
 ]
 
 
-if settings.DEV_DEBUG:
+if settings.DEBUG:
     import debug_toolbar
     from django.conf.urls.static import static
 

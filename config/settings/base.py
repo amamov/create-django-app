@@ -23,6 +23,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # Project apps
+    "accounts",
     # Third party apps
     "admin_interface",  # admin
     "colorfield",  # admin
@@ -52,7 +53,7 @@ ROOT_URLCONF = "config.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [str(BASE_DIR / "config" / "templates"),],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -119,7 +120,7 @@ MEDIA_ROOT = BASE_DIR / "config" / "media"
 
 # Costum User
 
-# AUTH_USER_MODEL = "accounts.User"
+AUTH_USER_MODEL = "accounts.User"
 
 
 # Email Configurations
