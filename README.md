@@ -38,3 +38,9 @@ touch .env
 SECRET_KEY="$z^z2@050!rw#sdqctujoq6w02$6ykd8z039uaawa1f)y^!p-o"
 ...
 ```
+
+## 5. migrate
+
+```shell
+python manage.py migrate
+```
