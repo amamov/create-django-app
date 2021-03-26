@@ -1,1 +1,1 @@
--r requirements/dev.py
+-r requirements/dev.txt
