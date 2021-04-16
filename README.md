@@ -1,4 +1,4 @@
-# create django app 3.1.4
+# django basic boilerplate version 3.1.4
 
 ## 0. base setup
 
@@ -11,7 +11,7 @@
 1. clone this pack.
 
 ```shell
-git clone https://github.com/amamov/create-django-app.git
+git clone https://github.com/amamov/django-basic-boilerplate.git
 ```
 
 2. initialize git
