@@ -11,7 +11,7 @@
 1. clone this pack.
 
 ```shell
-git clone https://github.com/amamov/django-basic-boilerplate.git
+git clone https://github.com/amamov/django-boilerplate.git
 ```
 
 2. initialize git
