@@ -109,25 +109,26 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-
 STATIC_URL = "/static/"
-STATIC_ROOT = BASE_DIR / "config" / "static"
+STATICFILES_DIRS = [
+    BASE_DIR / "config" / "static",
+]
+STATIC_ROOT = BASE_DIR / "config" / "staticfiles"  # collectstatic (server root)
 
 # Media files
-
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "config" / "media"
 
 
 # Costum User
-
 AUTH_USER_MODEL = "accounts.User"
 
 
+"""
 # Email Configurations
-
-# EMAIL_HOST = "smtp.mailgun.org"
-# EMAIL_PORT = 587
-# EMAIL_HOST_USER = os.environ.get("MAILGUN_HOST_USER")
-# EMAIL_HOST_PASSWORD = os.environ.get("MAILGUN_HOST_PASSWORD")
-# EMAIL_FROM = os.environ.get("MAILGUN_FROM")
+EMAIL_HOST = os.environ.get("EMAIL_HOST", "smtp.mailgun.org")
+EMAIL_PORT = int(os.environ.get("EMAIL_PORT", 587))
+EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
+EMAIL_FROM = os.environ.get("EMAIL_FROM")
+"""
