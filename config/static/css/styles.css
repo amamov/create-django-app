@@ -1,15 +1,21 @@
 @import "reset.css";
 
 body {
-    background: azure;
+  background: azure;
 }
 
-.hello_box{
-    margin: 3rem;
-    font-size: 2rem;
+.container {
+  width: 1000px;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.me {
-    margin: 3rem;
-    font-size: 1rem;
+.hello {
+  font-size: 5rem;
+}
+
+.amamov {
+  font-size: 2rem;
 }
