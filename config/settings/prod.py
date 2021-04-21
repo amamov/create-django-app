@@ -1,7 +1,6 @@
 import os
 from .base import *
 
-
 DEBUG = False
 
 ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
@@ -26,6 +25,7 @@ DATABASES = {
         "NAME": os.environ.get("DB_NAME"),
         "USER": os.environ["DB_USER"],
         "HOST": os.environ["DB_HOST"],
+        "PORT": os.environ["DB_PORT"],
         "PASSWORD": os.environ["DB_PASSWORD"],
         "OPTIONS": {"init_command": "SET sql_mode='STRICT_TRANS_TABLES'",},
     }

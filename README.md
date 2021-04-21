@@ -13,34 +13,27 @@
 ```shell
 git clone https://github.com/amamov/django-boilerplate.git
 ```
+2. [install python and python environment]()
 
-2. initialize git
+## 1. git clone
+
+1. clone this pack.
 
 ```shell
-rm -rf .git
+git clone https://github.com/amamov/drf-boilerplate.git
 ```
 
 ## 2. create environment
 
-## 3. install base django config
+## 3. initializing
+
 
 ```shell
-pip3 install -r requirements.txt
+sh initialize.sh
 ```
-
-## 4. create env file
 
 ```shell
-touch .env
+rm -rf initialize.sh
 ```
 
-```.env
-SECRET_KEY="$z^z2@050!rw#sdqctujoq6w02$6ykd8z039uaawa1f)y^!p-o"
-...
-```
 
-## 5. migrate
-
-```shell
-python manage.py migrate
-```
