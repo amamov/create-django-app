@@ -15,14 +15,6 @@ git clone https://github.com/amamov/django-boilerplate.git
 ```
 2. [install python and python environment]()
 
-## 1. git clone
-
-1. clone this pack.
-
-```shell
-git clone https://github.com/amamov/drf-boilerplate.git
-```
-
 ## 2. create environment
 
 ## 3. initializing
