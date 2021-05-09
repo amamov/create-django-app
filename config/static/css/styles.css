@@ -1,21 +1,35 @@
-@import "reset.css";
+/*@import "reset.css";*/
 
 body {
   background: azure;
 }
 
-.container {
-  width: 1000px;
-  min-height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@keyframes fadeIn_Ani {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.hello {
-  font-size: 5rem;
+@keyframes spread_Ani {
+  from {
+    margin: 100%;
+    width: 300%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
-.amamov {
-  font-size: 2rem;
+body {
+  animation-duration: 1s;
+  animation-name: fadeIn_Ani;
+}
+
+.ani-spread {
+  animation-duration: 1s;
+  animation-name: spread_Ani;
 }

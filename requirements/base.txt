@@ -3,5 +3,6 @@ pillow
 django-admin-interface
 django-dotenv
 pymysql
+django-bootstrap4
 
 

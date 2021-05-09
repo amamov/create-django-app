@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     # Third party apps
     "admin_interface",  # admin
     "colorfield",  # admin
+    "bootstrap4",
     # Django apps
     "django.contrib.admin",
     "django.contrib.auth",
@@ -38,6 +39,9 @@ INSTALLED_APPS = [
 ]
 
 X_FRAME_OPTIONS = "SAMEORIGIN"  # admin
+
+LOGIN_REDIRECT_URL = "/"  # LoginView
+LOGOUT_REDIRECT_URL = "/"  # LogoutView
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

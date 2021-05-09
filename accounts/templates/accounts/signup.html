@@ -1,13 +1,13 @@
 {% extends 'accounts/base.html' %} {% load bootstrap4 %} {% block container %}
 
 <div class="container mt-2">
-  <h3 class="mb-3">Login</h3>
+  <h3 class="mb-3">Sign up</h3>
   <div class="row mx-auto">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-      {% include "_form.html" with submit_label="login" %}
+      {% include "_form.html" with submit_label="Sign up" %}
       <div>
-        <a href="{% url 'accounts:signup' %}">Sign up</a>
+        <a href="{% url 'accounts:login' %}">Login</a>
       </div>
     </div>
     <div class="col-sm-3"></div>

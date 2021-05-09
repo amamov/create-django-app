@@ -1,13 +1,14 @@
-from django.contrib.auth import views as django_views
 from django.urls import path
 from . import views
 
+app_name = "accounts"
+
+
 urlpatterns = [
-    path(
-        "login/",
-        django_views.LoginView.as_view(template_name="accounts/login.html"),
-        name="login",
-    ),
+    path("signup/", views.signup, name="signup"),
+    path("login/", views.login, name="login",),
+    path("repassword/", views.PasswordChangeView.as_view(), name="password_change",),
     path("profile/", views.profile, name="profile"),
-    path("logout/", django_views.LogoutView.as_view(), name="logout"),
+    path("logout/", views.logout, name="logout"),
+    path("edit/", views.profile_edit, name="profile_edit"),
 ]
